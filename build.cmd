@@ -1,3 +1,4 @@
 pushd omnisharp-roslyn
-build.cmd
+dotnet restore
+msbuild /p:Configuration=Release
 popd
