@@ -12,10 +12,5 @@ rm -rf prebuilt-omnisharp-roslyn/prebuilt
 cp -R omnisharp-roslyn/bin/Release \
     prebuilt-omnisharp-roslyn/prebuilt
 
-cp prebuilt-omnisharp-roslyn/in/* prebuilt-omnisharp-roslyn
-
-for file in omnisharp omnisharp.cmd
-do
-    sed -i "s|@FILENAME@|$fileName|g" prebuilt-omnisharp-roslyn/$file
-done
+./scripts/patch.sh "$fileName"
 
