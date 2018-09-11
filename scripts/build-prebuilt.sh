@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 ./scripts/prepare.sh
+rm -rf omnisharp-roslyn/global.json
 ./scripts/build.sh
 
 fileName="$(find omnisharp-roslyn/bin/Release/ -name "*exe" | \
