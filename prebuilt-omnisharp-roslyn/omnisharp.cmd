@@ -1,2 +1,1 @@
-
-@"%~dp0prebuilt/OmniSharp.exe %*
+@"%~dp0prebuilt/OmniSharp.exe" %*

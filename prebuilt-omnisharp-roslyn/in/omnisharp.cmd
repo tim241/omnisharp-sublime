@@ -1,2 +1,1 @@
-
-@"%~dp0prebuilt/@FILENAME@ %*
+@"%~dp0prebuilt/@FILENAME@" %*
