@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 set -e
-./scripts/prepare.sh
-./scripts/build.sh
+git submodule update --init
 
+cd omnisharp-roslyn
+
+dotnet restore
+msbuild /p:Configuration=Release
+
+cd ..
